@@ -1,0 +1,123 @@
+nav {
+    color:black;
+    text-align: center;
+    margin-left: auto ;
+    margin-right: auto ;
+    padding: 20px;
+    font:2em courier new;
+    font-size: 4vw;
+    background-color: transparent;
+    min-width: 3vw;
+}
+
+body {
+    color:white;
+    margin: 0 auto;
+    text-align: center;
+    font: 1em courier;
+    background-color: white;
+    width: 100vw;
+}
+
+p {
+    color:black;
+    margin-left: auto ;
+    margin-right: auto ;
+    text-align: left;
+    font: 2em courier;
+    font-size: 3vw;
+    background-color: white;
+    width: 50vw;
+}
+
+a:link {
+    color:black;
+    text-decoration:none;
+}
+
+a:visited {
+    color:black;
+    text-decoration:none;
+}
+
+a:hover {
+    color:purple;
+}
+
+a:active {
+    color:gray;
+}
+
+img.landing {
+    padding: 1px;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+}
+
+img.gallery {
+    padding: 1px;
+    margin: 0 auto;
+    width: 75%;
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    transition:transform 0.25s ease;
+}
+
+img.gallery:hover {
+    transform:scale(1.75);
+}
+
+.row {
+    display: flex;
+    padding: 0 0px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.column {
+    flex: 25%;
+    max-width: 20%;
+    padding: 0 4px;
+    vertical-align: middle;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+  
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+  
+@media screen and (max-width: 1000px) {
+    .column {
+        flex: 50%;
+        max-width: 30%;
+    }
+    /* Turn off hover */
+    img.gallery:hover {
+        transform:scale(1);
+    }
+    
+}
+  
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    img.gallery:hover {
+        transform:scale(1);
+    }
+    nav {
+        font-size: 8vw;
+    }
+    p {
+        font-size: 5vw;
+    }
+}
