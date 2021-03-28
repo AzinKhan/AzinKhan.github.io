@@ -122,6 +122,10 @@ img.gallery:hover {
     }
 }
 
+iframe {
+    margin-left: 100px;
+}
+
  /* The side navigation menu */
  .sidebar {
     margin: 0;
