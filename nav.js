@@ -74,6 +74,4 @@ function addNav() {
         link.appendChild(img);
         navbar.appendChild(link); 
     });
-
-    content.appendChild(navbar);
 }
