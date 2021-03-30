@@ -5,7 +5,7 @@ nav {
     margin-right: auto ;
     padding: 20px;
     font:2em courier new;
-    font-size: 4vw;
+    font-size: 2vw;
     background-color: transparent;
     min-width: 3vw;
 }
@@ -21,10 +21,10 @@ body {
 
 p {
     color:black;
-    margin-left: auto ;
+    margin-left: 250px ;
     margin-right: auto ;
     text-align: left;
-    font: 2em courier;
+    font: 1em courier;
     font-size: 2vw;
     background-color: white;
     width: 50vw;
@@ -78,6 +78,10 @@ img.gallery:hover {
     margin-right: auto ;
 }
 
+.gallery {
+    margin-left: 200px;
+}
+
 .column {
     flex: 25%;
     max-width: 20%;
@@ -115,10 +119,11 @@ img.gallery:hover {
         transform:scale(1);
     }
     nav {
-        font-size: 8vw;
+        font-size: 1vw;
     }
     p {
-        font-size: 5vw;
+        font-size: 3vw;
+        margin-left: auto;
     }
 }
 
@@ -164,14 +169,13 @@ iframe {
     height: 1000px;
   }
   
-  /* On screens that are less than 700px wide, make the sidebar into a topbar */
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     .sidebar {
       width: 100%;
       height: auto;
       position: relative;
+      display: none;
     }
-    .sidebar a {float: left;}
     div.content {margin-left: 0;}
   }
   
