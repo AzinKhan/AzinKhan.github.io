@@ -74,4 +74,15 @@ function addNav() {
         link.appendChild(img);
         navbar.appendChild(link); 
     });
+
+    var hamburger = document.getElementById("nav_icon");
+    var hb = new Image();
+    hb.src = "/Hamburger_icon.svg";
+    hamburger.className = "burger";
+    hamburger.onclick = function() {
+        currentStyle = navbar.style.display;
+        isShown = currentStyle === "block";
+        navbar.style.display = isShown ? "none" : "block";
+    }
+    hamburger.appendChild(hb);
 }

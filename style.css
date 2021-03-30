@@ -4,7 +4,7 @@ nav {
     margin-left: auto ;
     margin-right: auto ;
     padding: 20px;
-    font:2em courier new;
+    font: courier;
     font-size: 2vw;
     background-color: transparent;
     min-width: 3vw;
@@ -13,6 +13,8 @@ nav {
 body {
     color:white;
     margin: 0 auto;
+    left: auto;
+    right: auto;
     text-align: center;
     font: 1em courier;
     background-color: white;
@@ -21,41 +23,34 @@ body {
 
 p {
     color:black;
-    margin-left: 250px ;
+    margin-left: auto;
     margin-right: auto ;
     text-align: left;
-    font: 1em courier;
-    font-size: 2vw;
+    font: courier, monospace;
+    font-size: 100%;
     background-color: white;
     width: 50vw;
 }
 
-a:link {
-    color:black;
-    text-decoration:none;
-}
-
-a:visited {
-    color:black;
-    text-decoration:none;
-}
-
-a:hover {
-    color:purple;
-}
-
-a:active {
-    color:gray;
+.burger {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    clear: right;
 }
 
 img.landing {
     padding: 1px;
-    margin-left: 200px;
+    margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     width: 75%;
     max-width: 600px;
     min-width: 200px;
-    height: auto;
+    /* height: auto; */
 }
 
 img.gallery {
@@ -80,7 +75,7 @@ img.gallery:hover {
 }
 
 .gallery {
-    margin-left: 200px;
+    margin-left: auto;
 }
 
 .column {
@@ -98,6 +93,43 @@ img.gallery:hover {
     width: 100%;
     height: 100%;
 }
+
+iframe {
+    margin-left: 50px;
+}
+
+/* The side navigation menu */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    display: none;
+    float: left;
+}
+
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
   
 @media screen and (max-width: 1000px) {
     .column {
@@ -108,7 +140,13 @@ img.gallery:hover {
     img.gallery:hover {
         transform:scale(1);
     }
-    
+    /* .sidebar {
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: none;
+        font-size: 2vw;
+    }  */
 }
   
 @media screen and (max-width: 800px) {
@@ -129,64 +167,12 @@ img.gallery:hover {
     img.landing {
         margin-left: auto;
     }
-}
-
-iframe {
-    margin-left: 100px;
-}
-
- /* The side navigation menu */
- .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  /* Sidebar links */
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;
-  }
-  
-  /* Active/current link */
-  .sidebar a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  /* Links on mouse-over */
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  
-  /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-  div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-      display: none;
-    }
+    /* .sidebar {
+        width: 30%;
+        height: auto;
+        position: relative;
+        display: none;
+        font-size: 3vw;
+    } */
     div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  } 
+}
