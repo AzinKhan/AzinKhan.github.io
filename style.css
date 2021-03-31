@@ -94,7 +94,7 @@ img.gallery:hover {
     height: 100%;
 }
 
-iframe {
+iframe#shop {
     margin-left: 50px;
 }
 
