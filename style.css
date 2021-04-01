@@ -9,6 +9,11 @@ body {
     width: 100vw;
 }
 
+ul > li {
+    display: inline-block;
+    margin: 20px;
+}
+
 p {
     color:black;
     margin-left: auto;
