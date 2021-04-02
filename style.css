@@ -56,10 +56,6 @@ img.gallery {
     transition:transform 0.25s ease;
 }
 
-img.gallery:hover {
-    transform:scale(1.5);
-}
-
 .gallery {
     margin-left: auto;
 }
