@@ -14,6 +14,7 @@ ul > li {
     margin: 10px;
 }
 
+
 p {
     color:black;
     margin-left: auto;
@@ -25,13 +26,13 @@ p {
     width: 50vw;
 }
 
-.burger {
-    display: block;
-    position: fixed;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    clear: right;
+
+.navbar-label{
+    background-color: transparent;
+}
+
+#toggle {
+    display: none;
 }
 
 img.landing {
@@ -43,7 +44,7 @@ img.landing {
     width: 75%;
     max-width: 600px;
     min-width: 200px;
-    /* height: auto; */
+    height: auto;
 }
 
 img.gallery {
@@ -64,56 +65,154 @@ iframe#shop {
     margin-left: 50px;
 }
 
-/* The side navigation menu */
-.sidebar {
+nav {
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    position: fixed;
+    position: relative;
+    display: inline;
     height: 100%;
     overflow: auto;
-    display: none;
-    float: left;
+    transition: 0.5s;
 }
 
-/* Sidebar links */
-.sidebar a {
+nav a {
     display: block;
     color: black;
     padding: 16px;
-    text-decoration: none;
+    text-decoration: none;      
+    display: inline-block;
+    clear: both;
+    text-transform: uppercase;
 }
 
-/* Active/current link */
-.sidebar a.active {
-    background-color: #4CAF50;
-    color: white;
-}
-
-/* Links on mouse-over */
-.sidebar a:hover:not(.active) {
-    background-color: #555;
+nav a:hover:not(.active) {
+    background-color: rgb(168, 168, 168);
     color: white;
 }
   
   
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-    nav {
-        font-size: 1vw;
-    }
+@media screen and (max-width: 1000px) {
     p {
         font-size: 3vw;
         margin-left: auto;
     }
+
     img.landing {
         margin-left: auto;
     }
-    div.content {margin-left: 0;}
+
+    div.content {
+        margin-left: 0;
+    }
+
+    .navbar-label{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 50px;
+        height: 50px;
+        margin: 25px;
+        background-color: transparent;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: 0.6s;
+    }
+
+    .navbar-label:hover {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1), inset 0 0 0 50px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-label:before, .navbar-label:after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 50%;
+        height: 2px;
+        background-color: black;
+        border-radius: 5px;
+        transition: 0.5s;
+        opacity: 0;
+        margin: 25px 13px 20px;
+    }
+
+    #toggle:checked ~ .navbar-label:before {
+        transform: translateY(-50%) rotate(45deg) scale(1);
+        opacity: 100;
+    }
+
+    #toggle:checked ~ .navbar-label:after {
+        transform: translateY(-50%) rotate(-45deg) scale(1);
+        opacity: 100;
+    }
+
+    nav a {
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        text-transform: uppercase;
+        transform: scaleY(0.2);
+        letter-spacing: -6px;
+        height: 7px;
+        line-height: 7px;
+        color: transparent;
+        transition: 0.5s, opacity 0.1s;
+        pointer-events: none;
+        padding: 0;
+    }
+
+    nav a:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        transition: 0.5s;
+        top: 50%;
+        left: 0;
+        transform: scaleY(5);
+    }
+
+    nav a:nth-child(n + 4) {
+        margin-top: -7px;
+        opacity: 0;
+    }
+
+    #toggle:checked ~ nav {
+        margin-bottom: 100px;
+        pointer-events: auto;
+        transform: translate(25px, 25px);
+    }
+
+    #toggle:checked ~ nav a {
+        opacity: 100;
+    }
+
+    #toggle:checked ~ nav a {
+        color: #000000;
+        letter-spacing: 0;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 0;
+        opacity: 1;
+        transform: scaleY(1);
+        pointer-events: auto;
+        transition: 0.5s, opacity 0.1s;
+    }
+
+    #toggle:checked ~ nav a:before {
+        opacity: 0;
+    }
+    
+    nav {
+        font-size: 2vw;
+        display: block;
+        position: absolute;
+        margin: 37px 35px 20px;
+        transition: 0.5s;
+        left: 0;
+        top: 0;
+    }
 }
 
 .fade-in {
@@ -123,6 +222,7 @@ iframe#shop {
     -o-animation: fadeIn ease 5s;
     -ms-animation: fadeIn ease 5;
 }
+
 @keyframes fadeIn {
     0% {
         opacity:0;
