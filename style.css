@@ -60,31 +60,8 @@ img.gallery:hover {
     transform:scale(1.5);
 }
 
-.row {
-    display: flex;
-    padding: 0 0px;
-    margin-left: auto ;
-    margin-right: auto ;
-}
-
 .gallery {
     margin-left: auto;
-}
-
-.column {
-    flex: 25%;
-    max-width: 20%;
-    padding: 0 4px;
-    vertical-align: middle;
-    margin-left: auto ;
-    margin-right: auto ;
-}
-  
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
 }
 
 iframe#shop {
