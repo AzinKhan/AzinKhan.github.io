@@ -45,6 +45,7 @@ img.landing {
     max-width: 600px;
     min-width: 200px;
     height: auto;
+    z-index: 0;
 }
 
 img.gallery {
@@ -116,6 +117,7 @@ nav a:hover:not(.active) {
         cursor: pointer;
         border-radius: 50%;
         transition: 0.6s;
+        z-index: 2;
     }
 
     .navbar-label:hover {
@@ -212,6 +214,7 @@ nav a:hover:not(.active) {
         transition: 0.5s;
         left: 0;
         top: 0;
+        z-index: 1;
     }
 }
 
