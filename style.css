@@ -97,31 +97,11 @@ iframe#shop {
     color: white;
 }
   
-@media screen and (max-width: 1000px) {
-    .column {
-        flex: 50%;
-        max-width: 30%;
-    }
-    /* Turn off hover */
-    img.gallery:hover {
-        transform:scale(1);
-    }
-    /* .sidebar {
-        width: 30%;
-        height: auto;
-        position: relative;
-        display: none;
-        font-size: 2vw;
-    }  */
-}
   
 @media screen and (max-width: 800px) {
     .column {
         flex: 50%;
         max-width: 50%;
-    }
-    img.gallery:hover {
-        transform:scale(1);
     }
     nav {
         font-size: 1vw;
@@ -133,13 +113,6 @@ iframe#shop {
     img.landing {
         margin-left: auto;
     }
-    /* .sidebar {
-        width: 30%;
-        height: auto;
-        position: relative;
-        display: none;
-        font-size: 3vw;
-    } */
     div.content {margin-left: 0;}
 }
 
