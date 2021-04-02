@@ -77,7 +77,7 @@ function addNav() {
 
     var hamburger = document.getElementById("nav_icon");
     var hb = new Image();
-    hb.src = "/Hamburger_icon.svg";
+    hb.src = "/images/Hamburger_icon.svg";
     hamburger.className = "burger";
     hamburger.onclick = function() {
         currentStyle = navbar.style.display;
