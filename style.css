@@ -8,10 +8,6 @@ body {
     width: 100vw;
 }
 
-.cont ul > li {
-    display: inline-block;
-}
-
 p {
     color:black;
     margin-left: auto;
@@ -29,13 +25,16 @@ p {
     bottom: 0;
     width: 100%;
     margin-left: auto;
-    padding: 0;
     margin-right: auto;
     background-color: white;
 }
 
 #content-footer ul > li {
     display: inline-block;
+}
+
+#content-footer ul {
+    padding: 0;
 }
 
 #content-footer img {
@@ -47,8 +46,22 @@ p {
 }
 
 .cont {
-    margin-top: 20px;
+    overflow: scroll;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 75px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+
+.cont ul > li {
+    display: inline-block;
+}
+
+.cont ul {
+    padding: 0;
 }
 
 .navbar-label{
@@ -60,7 +73,6 @@ p {
 }
 
 img.landing {
-    padding: 1px;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
@@ -114,29 +126,13 @@ nav a:hover:not(.active) {
 }
   
 @media screen and (max-width: 1000px) {
-    #cont p {
+    .cont p {
         font-size: 3vw;
-        margin-left: auto;
-    }
-    
-    #content-footer p {
-        color:black;
-        margin-left: auto;
-        margin-right: auto ;
-        text-align: left;
-        font: courier, monospace;
-        font-size: 100%;
-        background-color: black;
-        width: 50vw; 
-        display: block;
     }
 
     img.landing {
         margin-left: auto;
-    }
-
-    div.content {
-        margin-left: 0;
+        margin-right: auto;
     }
 
     .navbar-label{
