@@ -65,10 +65,13 @@ img.gallery {
 nav {
     margin: 0;
     padding: 0;
-    position: relative;
-    display: inline;
-    height: 100%;
+    position: fixed;
+    display: block;
     overflow: auto;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
     transition: 0.5s;
 }
 
@@ -103,7 +106,7 @@ nav a:hover:not(.active) {
     }
 
     .navbar-label{
-        position: absolute;
+        position: fixed;
         left: 0;
         top: 0;
         width: 50px;
@@ -162,7 +165,7 @@ nav a:hover:not(.active) {
     nav a:before {
         position: absolute;
         content: '';
-        width: 100%;
+        width: 20px;
         height: 2px;
         background-color: black;
         transition: 0.5s;
@@ -178,8 +181,10 @@ nav a:hover:not(.active) {
 
     #toggle:checked ~ nav {
         margin-bottom: 100px;
+        margin-top: 0;
         pointer-events: auto;
         transform: translate(25px, 25px);
+        width: 100vw;
     }
 
     #toggle:checked ~ nav a {
@@ -205,12 +210,13 @@ nav a:hover:not(.active) {
     nav {
         font-size: 2vw;
         display: block;
-        position: absolute;
-        margin: 37px 34px 20px;
+        position: fixed;
+        margin: 37px 40px 20px;
         transition: 0.5s;
         left: 0;
         top: 0;
         z-index: 1;
+        width: 20px;
     }
 }
 
