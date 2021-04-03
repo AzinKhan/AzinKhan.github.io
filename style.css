@@ -1,17 +1,16 @@
 body {
-    color:white;
+    color:black;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     font: 1em courier;
-    background-color: white;
+    background-color: transparent;
     width: 100vw;
 }
 
-ul > li {
+.cont ul > li {
     display: inline-block;
 }
-
 
 p {
     color:black;
@@ -20,10 +19,37 @@ p {
     text-align: left;
     font: courier, monospace;
     font-size: 100%;
-    background-color: white;
+    background-color: transparent;
     width: 50vw;
 }
 
+#content-footer {
+    position: fixed;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    margin-left: auto;
+    padding: 0;
+    margin-right: auto;
+    background-color: white;
+}
+
+#content-footer ul > li {
+    display: inline-block;
+}
+
+#content-footer img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+
+.cont {
+    margin-top: 20px;
+    margin-bottom: 75px;
+}
 
 .navbar-label{
     background-color: transparent;
@@ -87,11 +113,22 @@ nav a:hover:not(.active) {
     color: white;
 }
   
-  
 @media screen and (max-width: 1000px) {
-    p {
+    #cont p {
         font-size: 3vw;
         margin-left: auto;
+    }
+    
+    #content-footer p {
+        color:black;
+        margin-left: auto;
+        margin-right: auto ;
+        text-align: left;
+        font: courier, monospace;
+        font-size: 100%;
+        background-color: black;
+        width: 50vw; 
+        display: block;
     }
 
     img.landing {
