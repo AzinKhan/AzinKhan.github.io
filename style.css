@@ -33,7 +33,7 @@ p {
     display: inline-block;
 }
 
-#content-footer ul {
+ul {
     padding: 0;
 }
 
@@ -55,13 +55,8 @@ p {
     padding-bottom: 50px;
 }
 
-
 .cont ul > li {
     display: inline-block;
-}
-
-.cont ul {
-    padding: 0;
 }
 
 .navbar-label{
