@@ -86,7 +86,7 @@ nav a {
 }
 
 nav a:hover:not(.active) {
-    background-color: rgb(168, 168, 168);
+    background-color: rgba(0, 0, 0, 0.1);
     color: white;
 }
   
