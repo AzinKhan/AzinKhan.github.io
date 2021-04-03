@@ -90,6 +90,13 @@ img.gallery {
     height: auto;
 }
 
+#shop {
+    margin-top: 35px;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
 .gallery {
     margin-left: auto;
     margin-right: auto;
