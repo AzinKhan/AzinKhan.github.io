@@ -121,10 +121,6 @@ nav a:hover:not(.active) {
 }
   
 @media screen and (max-width: 1000px) {
-    .cont p {
-        font-size: 3vw;
-    }
-
     img.landing {
         margin-left: auto;
         margin-right: auto;
