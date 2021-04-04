@@ -35,7 +35,7 @@ p {
 
 ul {
     padding: 0;
-    max-width: 1400px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -60,6 +60,21 @@ ul {
 
 .cont ul > li {
     display: inline-block;
+}
+
+figure {
+    padding: 10px;
+    width: 350px;
+    text-align: left;
+    font-size: 80%;
+}
+
+figcaption {
+    padding-top: 10px;
+}
+
+#caption-list {
+    display: block;
 }
 
 .navbar-label{
@@ -258,6 +273,15 @@ nav a:hover:not(.active) {
         width: 100vw;
         height: 35px;
     }
+
+    figure {
+        padding: 0px;
+        width: 350px;
+        text-align: left;
+        font-size: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }    
 }
 
 .fade-in {
