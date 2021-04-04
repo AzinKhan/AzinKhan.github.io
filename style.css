@@ -117,6 +117,10 @@ img.gallery {
     margin-right: auto;
 }
 
+#gallery {
+    max-width: 1400px;
+}
+
 nav {
     padding: 0;
     position: fixed;
