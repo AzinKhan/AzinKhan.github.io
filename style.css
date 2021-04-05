@@ -92,10 +92,19 @@ figcaption {
     text-align: left;
 }
 
+#signup-page p {
+    font-size: 130%;;
+    float: left;
+    width: 25vw;
+    height: 100vh;
+    padding-top: 25px;
+}
+
 #signup-form {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
+    padding: 50px;
+    width: 15vw;
+    height: 100vh;
+    display: inline-block;
 }
 
 #signup-form input[type="text"] {
@@ -338,11 +347,18 @@ nav a:hover:not(.active) {
         text-align: left;
     }
 
+    #signup-page p {
+        float: none;
+        height: auto;
+        font-size: 100%;
+        width: 80vw;
+    }
+
     #signup-form {
         width: 50vw;
         margin-left: auto;
         margin-right: auto;
-        /* padding: 20px; */
+        float: none;
     }
 }
 
