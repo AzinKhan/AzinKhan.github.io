@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<link rel="stylesheet" type="text/css" href="/style.css">
+<title>Automatic Panic </title>
+
+<body style="height: 100vh">
+    <input id="toggle" type="checkbox">
+    <label class="navbar-label" for="toggle"> </label>
+    <nav>
+
+        <a href=bio.html type="button">Bio</a>
+
+        <a href=music.html type="button">Music</a>
+
+        <a href=podcast.html type="button">Podcast</a>
+
+        <a href=gallery.html type="button">Gallery</a>
+
+        <a href=shop.html type="button">Shop</a>
+
+        <a href=subscribe.html type="button">Subscribe</a>
+
+    </nav>
+    <div class="cont">
+        <div id="signup-page">
+
+            <form action="https://www.getdrip.com/forms/649680572/submissions" method="post"
+                data-drip-embedded-form="649680572" id="signup-form">
+                <div data-drip-attribute="description"><strong>We'd love to stay in touch </strong><br>
+                    <br>
+                    Sign up to receive an exclusive EP
+                </div>
+
+
+                <div>
+                    <label for="drip-email">Email Address</label><br>
+                    <input type="email" id="drip-email" name="fields[email]" value="">
+                </div>
+
+                <div>
+                    <label for="drip-first-name">First Name</label><br>
+                    <input type="text" id="drip-first-name" name="fields[first_name]" value="">
+                </div>
+
+                <div>
+                    <label for="drip-last-name">Last Name</label><br>
+                    <input type="text" id="drip-last-name" name="fields[last_name]" value="">
+                </div>
+
+
+                <div style="display: none;" aria-hidden="true">
+                    <label for="website">Website</label><br>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="false" value="">
+                </div>
+
+                <div>
+                    <input type="submit" value="Sign Up" data-drip-attribute="sign-up-button">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- Drip -->
+<script type="text/javascript">
+    var _dcq = _dcq || [];
+    var _dcs = _dcs || {};
+    _dcs.account = '1374730';
+
+    (function () {
+        var dc = document.createElement('script');
+        dc.type = 'text/javascript'; dc.async = true;
+        dc.src = '//tag.getdrip.com/1374730.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(dc, s);
+    })();
+</script>
+<!-- end Drip -->
+
+</html>

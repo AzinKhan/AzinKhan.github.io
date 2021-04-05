@@ -85,6 +85,51 @@ figcaption {
     display: none;
 }
 
+#signup-page {
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#signup-form {
+    width: 25vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+#signup-form input[type="text"] {
+    margin: 0;
+    padding: .375rem .5625rem;
+}
+
+#signup-form input[type="email"] {
+    margin: 0;
+    padding: .375rem .5625rem;
+}
+
+#signup-form input[type="submit"] {
+    margin: 0; 
+    font: 1em courier;
+    padding: .375rem .5625rem;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#signup-form input[type="submit"]:hover {
+    background-color: rgb(99, 99, 99);
+}
+
+#signup-form input[type="submit"]:active {
+    background-color: rgb(209, 209, 209);
+}
+
+#signup-form > div {
+    margin-bottom: 0.75rem;
+}
+
 img.landing {
     margin-left: auto;
     margin-right: auto;
