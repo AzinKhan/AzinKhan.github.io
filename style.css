@@ -100,6 +100,43 @@ figcaption {
     padding-top: 25px;
 }
 
+.cont-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 400px 200px auto;
+    row-gap: 30px;
+    gap: 50px;
+    width: 100vw;
+    margin-bottom: 75px;
+}
+
+.ep-artwork {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    width: 400px;
+    height: 400px;
+}
+
+.ep-text {
+    font-size: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    text-align: left;
+}
+
+.ep-player {
+    width: 400px;
+    height: 166px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
 #signup-form {
     padding: 50px;
     width: 15vw;
@@ -359,6 +396,50 @@ nav a:hover:not(.active) {
         margin-left: auto;
         margin-right: auto;
         float: none;
+    }
+
+    .cont-grid {
+        display: inline-grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+        row-gap: 30px;
+        gap: 50px;
+     }
+    
+    .ep-text {
+        font-size: 100%;
+        width: 80vw;
+        max-width: none;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        align-self: center;
+        justify-self: center;
+     }
+
+    .ep-artwork {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 80vw;
+        max-width: 400px;
+        height: auto;
+        align-self: center;
+        justify-self: center;
+    }
+    
+    .ep-player {
+        width: 80vw;
+        max-width: 400px;
+        height: 166px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        align-self: center;
+        justify-self: center;
     }
 }
 
