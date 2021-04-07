@@ -105,7 +105,7 @@ figcaption {
     grid-template-columns: 1fr 2fr 2fr 1fr;
     grid-template-rows: auto;
     row-gap: 30px;
-    gap: 50px;
+    column-gap: 30px;
     width: 100vw;
     margin-bottom: 75px;
     margin-top: 75px;
@@ -114,21 +114,32 @@ figcaption {
 .col-1 {
     grid-column-start: 2;
     grid-column-end: 3;
+    align-self: center;
+    justify-self: center;
 }
 
 .col-2 {
     grid-column-start: 3;
     grid-column-end: 4;
+    align-self: center;
+    justify-self: center;
 }
 
 .middle {
     grid-column-start: 2;
     grid-column-end: 4;
+    align-self: center;
+    justify-self: center;
 }
 
-.ep-image, .ep-artwork {
+.ep-artwork {
     width: 400px;
     height: 400px;
+}
+
+.ep-image {
+    width: 400px;
+    height: auto;
 }
 
 .ep-artwork {
