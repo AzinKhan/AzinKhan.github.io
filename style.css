@@ -62,7 +62,7 @@ ul {
     display: inline-block;
 }
 
-figure {
+.music-figure {
     padding: 10px;
     width: 350px;
     text-align: left;
@@ -143,8 +143,8 @@ figcaption {
 }
 
 .ep-artwork {
-    /* box-shadow: rgb(161, 161, 161) 5px 5px 5px 5px; */
-    border: solid;
+    box-shadow: rgb(161, 161, 161) 5px 5px 5px 5px;
+    border: 3px solid;
 }
 
 .ep-text {
@@ -157,11 +157,19 @@ figcaption {
 .ep-player {
     width: 400px;
     height: 166px;
+    box-shadow: rgb(161, 161, 161) 5px 5px 5px 5px;
 }
 
 .ep-video {
+    box-shadow: rgb(161, 161, 161) 3px 3px 3px 3px;
     width: 400px;
     height: 225px;
+}
+
+.cont-grid figcaption {
+    height: 25px;
+    text-align: left;
+    max-width: 400px;
 }
 
 #signup-form {
@@ -395,9 +403,10 @@ nav a:hover:not(.active) {
         height: 35px;
     }
 
-    figure {
+    .music-figure {
         padding: 0px;
-        width: 350px;
+        width: 80vw;
+        max-width: 350px;
         text-align: left;
         font-size: 80%;
         margin-left: auto;
@@ -430,7 +439,7 @@ nav a:hover:not(.active) {
         grid-template-columns: auto;
      }
 
-    .ep-text, .ep-artwork, .ep-player, .ep-video, .ep-image {
+    .ep-text, .ep-artwork, .ep-player, .ep-image, .ep-video {
         width: 80vw;
         height: auto;
     }
@@ -455,6 +464,10 @@ nav a:hover:not(.active) {
     .ep-player {
         max-width: 400px;
         height: 166px;
+    }
+    
+    .cont-grid figcaption {
+        height: auto;
     }
 }
 
