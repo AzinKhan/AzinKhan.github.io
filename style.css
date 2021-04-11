@@ -108,6 +108,8 @@ figcaption {
     column-gap: 30px;
     width: 100vw;
     margin-bottom: 75px;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .col-1 {
