@@ -133,9 +133,11 @@ figcaption {
     justify-self: center;
 }
 
-.ep-artwork {
-    width: 400px;
-    height: 400px;
+.ep-artwork-full {
+    width: 300px;
+    height: 300px;
+    box-shadow: rgb(161, 161, 161) 5px 5px 5px 5px;
+    border: 3px solid;
 }
 
 .ep-image {
@@ -144,9 +146,15 @@ figcaption {
 }
 
 .ep-artwork {
+    width: 400px;
+    height: 400px;
     box-shadow: rgb(161, 161, 161) 5px 5px 5px 5px;
     border: 3px solid;
 }
+.ep-artwork-full:link {color: black;}
+.ep-artwork-full:visited {color: black;}
+.ep-artwork-full:hover {color: black;}
+.ep-player-full:active {color: black;}
 
 .ep-text {
     font-size: 100%;
@@ -158,6 +166,12 @@ figcaption {
 .ep-player {
     width: 400px;
     height: 166px;
+    box-shadow: rgb(161, 161, 161) 5px 5px 5px 5px;
+}
+
+.ep-player-full {
+    width: 300px;
+    height: 350px;
     box-shadow: rgb(161, 161, 161) 5px 5px 5px 5px;
 }
 
@@ -177,6 +191,14 @@ figcaption {
     display: inline-block;
     clear: both;
     font-size: 200%;
+}
+
+.ep-img-link {
+    color: black;
+}
+
+.ep-img-link:hover:not(.active) {
+    color: black;
 }
 
 .ep-link:hover:not(.active) {
@@ -460,6 +482,11 @@ nav a:hover:not(.active) {
     .ep-text, .ep-artwork, .ep-player, .ep-image, .ep-video {
         width: 80vw;
         height: auto;
+    }
+
+    .ep-player-full {
+        width: 80vw;
+        max-width: 300px;
     }
     
     .ep-text {
