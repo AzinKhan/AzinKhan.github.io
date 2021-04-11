@@ -168,6 +168,7 @@ figcaption {
 .ep-link {
     display: block;
     color: black;
+    font-weight: bold;
     padding: 16px;
     margin: 50px;
     text-decoration: none;      
