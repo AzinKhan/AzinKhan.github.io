@@ -151,6 +151,25 @@ figcaption {
     height: auto;
 }
 
+.button {
+    margin: 0;
+    font: 1em courier;
+    padding: .375rem .5625rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5%;
+}
+
+.button:link { text-decoration: none; }
+
+.button:visited { text-decoration: none; }
+
+.button:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
 .ep-artwork {
     width: 400px;
     height: 400px;
