@@ -154,7 +154,7 @@ figcaption {
 .button {
     margin: 0;
     font: 1em courier;
-    padding: .375rem .5625rem;
+    padding: .5rem .75rem;
     background-color: black;
     color: white;
     border: none;
