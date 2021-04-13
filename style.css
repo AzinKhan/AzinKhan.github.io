@@ -13,7 +13,7 @@ p {
     margin-left: auto;
     margin-right: auto ;
     text-align: left;
-    font: courier, monospace;
+    font-family: courier, monospace;
     font-size: 100%;
     background-color: transparent;
     width: 50vw;
@@ -185,7 +185,7 @@ figcaption {
     font-size: 100%;
     max-width: 500px;
     min-width: 300px;
-    text-align: left;
+    text-align: justify;
 }
 
 .ep-player {
