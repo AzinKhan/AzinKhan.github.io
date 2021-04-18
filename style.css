@@ -19,6 +19,12 @@ p {
     width: 50vw;
 }
 
+.col-text {
+    word-wrap: normal;
+    width: 100%;
+    text-align: justify;
+}
+
 #content-footer {
     position: fixed;
     display: block;
@@ -110,6 +116,26 @@ figcaption {
     margin-bottom: 75px;
 }
 
+.cont-grid-three {
+    display: inline-grid;
+    grid-template-columns: 1fr 4fr 4fr 4fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    column-gap: 50px;
+    width: 100vw;
+    margin-bottom: 75px;
+}
+
+.proof {
+    width: 25vw;
+    height: auto;
+}
+
+.graphic {
+    width: auto;
+    height: 78px
+}
+
 .col-1 {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -124,9 +150,50 @@ figcaption {
     justify-self: center;
 }
 
+.col-3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
 .middle {
     grid-column-start: 2;
     grid-column-end: 4;
+    align-self: center;
+    justify-self: center;
+}
+
+.middle-three {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    align-self: center;
+    justify-self: center;
+}
+
+.row-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    align-self: center;
+    justify-self: center;
+}
+
+.row-2 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    justify-self: center;
+}
+
+.row-3 {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: auto;
+}
+
+.all {
+    grid-column-start: 1;
+    grid-column-end: 5;
     align-self: center;
     justify-self: center;
 }
@@ -497,12 +564,12 @@ nav a:hover:not(.active) {
         float: none;
     }
 
-    .cont-grid {
+    .cont-grid, .cont-grid-three {
         display: inline-grid;
         grid-template-columns: auto;
      }
 
-    .ep-text, .ep-artwork, .ep-player, .ep-image, .ep-video {
+    .ep-text, .ep-artwork, .ep-player, .ep-image, .ep-video, .col-text{
         width: 80vw;
         height: auto;
     }
@@ -522,11 +589,16 @@ nav a:hover:not(.active) {
         height: auto;
     }
 
-    .col-1, .col-2, .middle {
+    .col-1, .col-2, .col-3, .middle, .all, .middle-three{
         grid-column-start: 1;
         grid-column-end: 2;
         align-self: center;
         justify-self: center;
+    }
+    
+    .row-1, .row-2, .row-3 {
+        grid-row-start: auto;
+        grid-row-end: auto;
     }
 
     .ep-player {
@@ -535,6 +607,10 @@ nav a:hover:not(.active) {
     }
     
     .cont-grid figcaption {
+        height: auto;
+    }
+    .proof {
+        width: 80vw;
         height: auto;
     }
 }
