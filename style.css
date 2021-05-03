@@ -136,14 +136,14 @@ figcaption {
     height: 78px
 }
 
-.col-1 {
+.col-1, .swap-col-1 {
     grid-column-start: 2;
     grid-column-end: 3;
     align-self: center;
     justify-self: center;
 }
 
-.col-2 {
+.col-2, .swap-col-2 {
     grid-column-start: 3;
     grid-column-end: 4;
     align-self: center;
@@ -589,7 +589,7 @@ nav a:hover:not(.active) {
         height: auto;
     }
 
-    .col-1, .col-2, .col-3, .middle, .all, .middle-three{
+    .col-1, .col-2, .col-3, .middle, .all, .middle-three, .swap-col-1, .swap-col-2{
         grid-column-start: 1;
         grid-column-end: 2;
         align-self: center;
@@ -601,6 +601,16 @@ nav a:hover:not(.active) {
         grid-row-end: auto;
     }
 
+    .swap-col-2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .swap-col-1 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
     .ep-player {
         max-width: 400px;
         height: 166px;
@@ -609,6 +619,7 @@ nav a:hover:not(.active) {
     .cont-grid figcaption {
         height: auto;
     }
+
     .proof {
         width: 80vw;
         height: auto;
