@@ -19,6 +19,12 @@ p {
     width: 50vw;
 }
 
+.logo {
+    height: auto;
+    width: 300px;
+    margin: 10px;
+}
+
 .col-text {
     word-wrap: normal;
     width: 100%;
@@ -623,6 +629,12 @@ nav a:hover:not(.active) {
     .proof {
         width: 80vw;
         height: auto;
+    }
+
+    .logo {
+        height: auto;
+        width: 200px;
+        margin: 10px;
     }
 }
 
