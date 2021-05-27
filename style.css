@@ -241,6 +241,25 @@ figcaption {
     color: black;
 }
 
+.landing-button {
+    margin: 0;
+    font: 1.2em courier;
+    padding: .5rem 0.75rem;
+    background-color: rgb(255, 166, 0);
+    color: black;
+    border: none;
+    border-radius: 5%;
+}
+
+.landing-button:link { text-decoration: none; }
+
+.landing-button:visited { text-decoration: none; }
+
+.landing-button:hover:not(.active) {
+    background-color: rgb(226, 147, 0);
+    color: black;
+}
+
 .ep-artwork {
     width: 400px;
     height: 400px;
