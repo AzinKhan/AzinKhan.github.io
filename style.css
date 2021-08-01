@@ -17,6 +17,8 @@ p {
     font-size: 100%;
     background-color: transparent;
     width: 50vw;
+    min-width: 300px;
+    max-width: 600px;
 }
 
 .logo {
