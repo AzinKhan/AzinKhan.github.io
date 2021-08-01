@@ -562,7 +562,7 @@ nav a:hover:not(.active) {
 
     .music-figure {
         padding: 0px;
-        width: 80vw;
+        width: 100vw;
         max-width: 350px;
         text-align: left;
         font-size: 80%;
