@@ -87,10 +87,6 @@ figcaption {
     padding-top: 10px;
 }
 
-#caption-list {
-    display: block;
-}
-
 .navbar-label{
     background-color: transparent;
 }
@@ -380,9 +376,9 @@ img.landing {
 }
 
 img.gallery {
-    padding: 1px;
-    width: 75%;
-    max-width: 600px;
+    padding: 10px;
+    width: 90%;
+    max-width: 800px;
     min-width: 200px;
     height: auto;
     margin-left: auto;
@@ -395,12 +391,7 @@ img.gallery {
     height: 100vh;
 }
 
-#gallery {
-    max-width: 1400px;
-}
-
 nav {
-    padding: 0;
     position: fixed;
     display: block;
     overflow: auto;
