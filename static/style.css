@@ -87,6 +87,10 @@ figcaption {
     padding-top: 10px;
 }
 
+#caption-list {
+    display: block;
+}
+
 .navbar-label{
     background-color: transparent;
 }
