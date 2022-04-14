@@ -40,26 +40,29 @@ p {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    padding: 20px;
     background-color: white;
 }
 
-#content-footer ul > li {
+
+#content-footer a, #content-footer a:link, #content-footer a:visited {
+    color: black;
+    text-decoration: none;
+    display: block;
+    color: black;
+    padding: 16px;
     display: inline-block;
+    clear: both;
+    text-transform: uppercase;
 }
 
-ul {
-    padding: 0;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+#content-footer a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
 }
 
-#content-footer img {
-    width: 25px;
-    height: 25px;
-    display: inline-block;
-    padding-inline-start: 20px;
-    padding-inline-end: 20px;
+#content-footer a:link, #content-footer a:visited {
+    text-decoration: none;
 }
 
 .cont {
@@ -368,15 +371,12 @@ figcaption {
 }
 
 img.landing {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     width: 75%;
-    max-width: 600px;
+    max-width: 900px;
     min-width: 200px;
     height: auto;
-    z-index: 0;
 }
 
 img.gallery {
