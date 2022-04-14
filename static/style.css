@@ -657,6 +657,10 @@ nav a:hover:not(.active) {
     p {
         font-size: 120%;
     }
+
+    #content-footer {
+        display: none;
+    }
 }
 
 .fade-in {
