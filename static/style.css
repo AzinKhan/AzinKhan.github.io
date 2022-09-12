@@ -1,3 +1,43 @@
+/* #controls {
+    width: 80px;
+    float: bottom;
+ } */
+ 
+ #progress {
+    margin-top: 20px;
+    /* margin: 50px; */
+    border: 1px solid black;
+    cursor: pointer;
+    width: 250px;
+ }
+ 
+ #bar {
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.76);
+    width: 0;
+ }
+
+ #time-indicator {
+    margin-top: 20px;
+ }
+
+ .music-player {
+    border: 1px solid black;
+    width: 250px;
+    transition: transform .2s;
+ }
+
+ .music-player img {
+
+    width: 250px;
+ }
+
+ .music-player:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+ 
+
 body {
     color:black;
     margin-left: auto;
@@ -33,6 +73,12 @@ p {
     text-align: justify;
 }
 
+.col-text-padded {
+    word-wrap: normal;
+    text-align: left;
+    padding-left: 25%;
+}
+
 #content-footer {
     position: fixed;
     display: block;
@@ -41,6 +87,14 @@ p {
     margin-left: auto;
     margin-right: auto;
     background-color: white;
+}
+
+a {
+    color: black;
+}
+
+a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 
@@ -85,12 +139,14 @@ p {
     font-size: 80%;
 }
 
-figcaption {
-    padding-top: 10px;
+
+.concert-image {
+    padding: 10px;
+    max-width: 250px;
 }
 
-#caption-list {
-    display: block;
+figcaption {
+    padding-top: 10px;
 }
 
 .navbar-label{
@@ -399,7 +455,6 @@ img.gallery {
 }
 
 nav {
-    padding: 0;
     position: fixed;
     display: block;
     overflow: auto;
@@ -425,8 +480,13 @@ nav a:hover:not(.active) {
     background-color: rgba(0, 0, 0, 0.1);
     color: black;
 }
-  
+
 @media screen and (max-width: 800px) {
+    .col-text-padded {
+        padding-left: 0%;
+        text-align: center;
+    }
+
     img.landing {
         margin-left: auto;
         margin-right: auto;
@@ -652,9 +712,6 @@ nav a:hover:not(.active) {
         height: auto;
         width: 200px;
         margin: 10px;
-    }
-    p {
-        font-size: 120%;
     }
 
     #content-footer {
