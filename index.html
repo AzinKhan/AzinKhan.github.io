@@ -33,6 +33,53 @@
             font-size: 72pt; /* SUPER large font */
             font-weight: bold;
         }
+        /* Define the container style */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Full viewport height for centering */
+            background-color: #f0f0f0;
+        }
+
+        /* 1. Define the Fade-In Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start invisible */
+            }
+            to {
+                opacity: 1; /* End fully visible */
+            }
+        }
+
+        /* 2. Define the Spin Animation */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg); /* Start at 0 degrees */
+            }
+            to {
+                transform: rotate(360deg); /* Spin to 360 degrees */
+            }
+        }
+
+        /* Style for the image */
+        .animated-image {
+            width: 200px;
+            height: 200px;
+            
+            /* Add your image URL here */
+            background-image: url('https://i.imgur.com/gK9J6GZ.png'); 
+            background-size: cover;
+            
+            /* Apply the animations */
+            /* The 'fadeIn' animation runs first for 2 seconds */
+            animation: 
+                fadeIn 2s ease-out forwards,
+                spin 4s linear 2s infinite; 
+            
+            /* 'forwards' keeps the final opacity state after fadeIn is done */
+            /* '2s' delay on spin ensures it waits for the fade-in to complete */
+        }
     </style>
 </head>
 <body>
@@ -42,6 +89,12 @@
     <hr style="border-color: #FF00FF; border-width: 3px;"> <marquee class="flashy-text" behavior="alternate" scrollamount="10">
         📢 **GO AWAY, SERGE** 📢
     </marquee>
+
+
+    <div class="image-container">
+        <div class="animated-image"></div>
+    </div>
+
     
     <hr style="border-color: #FF00FF; border-width: 3px;">
 
