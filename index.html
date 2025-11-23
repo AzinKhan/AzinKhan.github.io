@@ -1,64 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi Serge!</title>
+    <style>
+        body {
+            /* Classic, stark background */
+            background-color: #000080; /* Dark Blue */
+            color: #00FF00; /* Neon Green text */
+            font-family: 'Comic Sans MS', 'Arial Black', sans-serif; 
+            text-align: center; 
+            margin: 50px;
+        }
 
-
-    
-    <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
-    <link rel="stylesheet" type="text/css" href="/static/style.css">
-    <title>Automatic Panic </title>
-    <meta name="description" content="
-        Automatic Panic.
-        London, UK.
-        We are Azin Khan and Andy Payne. Our stated aim is to sound bigger than any two-piece has the right to.
-        We’d love to stay in touch so give us a follow or drop us your thoughts at band@automaticpanic.co.uk.
-        Remember: Don’t Calm. Keep Panic. ">
-</head>
-<body style="height: 100vh">
-    <div class="cont">
+        h1 {
+            font-size: 48pt; 
+            border: 5px solid yellow; 
+            padding: 10px;
+            display: inline-block; 
+        }
         
-<input id="toggle" type="checkbox">
-<label class="navbar-label" for="toggle"> </label>
-<nav>
-    <a href=/bio.html type="button">Bio</a>
-    <a href=/music.html type="button">Music</a>
-    <a href=/podcast.html type="button">Podcast</a>
-    <a href=/gallery.html type="button">Gallery</a>
-    <a href=/shows.html type="button">Shows</a>
-    <a href=/blog type="button">Blog</a>
-    <a href=/shop.html type="button">Shop</a>
-    <a href=/subscribe.html type="button">Subscribe</a>
-</nav>
+        @keyframes flash {
+            0%   { color: red; }
+            25%  { color: yellow; }
+            50%  { color: lime; }
+            75%  { color: cyan; }
+            100% { color: magenta; }
+        }
 
-<span id="intro" class="fade-in">
-    <img src=/static/logo.png class="landing" alt="Automatic Panic Logo">
-</span>
+        .flashy-text {
+            animation: flash 0.5s infinite alternate;
+            font-size: 72pt; /* SUPER large font */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
 
-    </div>
-    <div id="content-footer">
-    <a href="https://www.facebook.com/automaticpanic">Facebook</a>
-    <a href="https://soundcloud.com/automaticpanic">Soundcloud</a>
-    <a href="https://www.instagram.com/automaticpanicband">Instagram</a>
-    <a href="https://open.spotify.com/artist/0lzo8cm8bdkSzHCai6QdgK">Spotify</a>
-</div>
+    <h1>Welcome to azinkhan.com</h1>
+    
+    <hr style="border-color: #FF00FF; border-width: 3px;"> <marquee class="flashy-text" behavior="alternate" scrollamount="10">
+        📢 **GO AWAY, SERGE** 📢
+    </marquee>
+    
+    <hr style="border-color: #FF00FF; border-width: 3px;">
 
-    <!-- Drip -->
-    <script type="text/javascript">
-        var _dcq = _dcq || [];
-        var _dcs = _dcs || {};
-        _dcs.account = '1374730';
+    <p style="font-size: 18pt;">
+        Thanks for visiting! This page is **UNDER CONSTRUCTION** 🚧 
+    </p>
 
-        (function () {
-            var dc = document.createElement('script');
-            dc.type = 'text/javascript'; dc.async = true;
-            dc.src = '//tag.getdrip.com/1374730.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(dc, s);
-        })();
-    </script>
-    <!-- end Drip -->
 </body>
-
 </html>
